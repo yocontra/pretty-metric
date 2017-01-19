@@ -1,0 +1,34 @@
+{
+  "name": "pretty-metric",
+  "version": "1.0.0",
+  "description": "Parse, convert, and humanize metric sizes",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevelacy/pretty-metric.git"
+  },
+  "keywords": [
+    "pretty",
+    "metric",
+    "human",
+    "humanized",
+    "prettify",
+    "km",
+    "milli",
+    "centi",
+    "kllo",
+    "meter"
+  ],
+  "author": "Steve Lacy <me@slacy.me> (http://slacy.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevelacy/pretty-metric/issues"
+  },
+  "homepage": "https://github.com/stevelacy/pretty-metric#readme",
+  "devDependencies": {
+    "ava": "^0.17.0"
+  }
+}
