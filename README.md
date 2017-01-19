@@ -33,6 +33,19 @@ prettyMetric(0.5).input('cm').humanize()
 
 ## Functions
 
+#### .km(), .hm(), .dam(), .m(), .dm(), .cm(), .mm()
+> Converts the input measurement to the corresponding output
+
+Default input measurement type is `meter`. It can be changed with `.input()`
+
+```js
+prettyMetric(1500).km()
+// => 1.5km
+
+prettyMetric(1).mm()
+// => 1000m
+```
+
 #### humanize()
 > Converts the input value to a more human recognizable size
 
@@ -60,11 +73,11 @@ prettyMetric(1500).input('mm').humanize()
 ```
 km:  kilometer  - 1000m
 hm:  hectometer - 100m
-dam: decameter  - 10m
+dam: decimeter  - 10m
 m:   meter      - 1m
 dm:  decimeter  - .1m
 cm:  centimeter - .01m
-mm:  milimeter  - .001m
+mm:  millimeter  - .001m
 
 ```
 
