@@ -83,7 +83,7 @@ prettyMetric(1500).input('mm').humanize()
 ```
 km:  kilometer  - 1000m
 hm:  hectometer - 100m
-dam: decimeter  - 10m
+dam: decameter  - 10m
 m:   meter      - 1m
 dm:  decimeter  - .1m
 cm:  centimeter - .01m
