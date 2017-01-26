@@ -49,6 +49,13 @@ prettyMetric(1).mm()
 #### humanize()
 > Converts the input value to a more human recognizable size
 
+This method will automatically add commas to the output string as follows:
+```
+100000 => 100km
+1000000 => 1,000km
+10000000 => 10,000km
+```
+
 ```js
 prettyMetric(150).humanize()
 // => 1.5m
