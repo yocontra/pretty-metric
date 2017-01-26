@@ -16,6 +16,9 @@ const prettyMetric = require('pretty-metric')
 prettyMetric(1500).km()
 // => 1.5km
 
+prettyMetric(1500000).humanize()
+// => 1,500km
+
 prettyMetric(1500).humanize()
 // => 1.5km
 
