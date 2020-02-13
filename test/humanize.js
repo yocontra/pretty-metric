@@ -50,3 +50,7 @@ test('input: humanize cm', function (t) {
 test('input: humanize mm', function (t) {
   t.is(pretty(1500).input('mm').humanize(), '1.5m')
 })
+
+test('input: humanize zero', function (t) {
+  t.is(pretty(0).input('mm').humanize(), '0mm')
+})

@@ -32,7 +32,7 @@ function Pretty (value) {
   if (!(this instanceof Pretty)) {
     return new Pretty(value)
   }
-  this.value = value || 1
+  this.value = value === 0 ? 0 : value || 1
   this.type = types.m
 }
 
