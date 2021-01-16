@@ -290,3 +290,19 @@ test('input: mm2 to cm2', function (t) {
   t.is(pretty(10000000).input('mm2').cm2(), '100000cm2')
 })
 
+
+// invalid conversions
+test('converting from length to area throws error', function (t) {
+  const error = t.throws(() => pretty(1).input('m').km2())
+  t.is(
+    error.message,
+    'Invalid conversion. You are trying to convert a length measurement to an area measurement.'
+  )
+})
+test('converting from area to length throws error', function (t) {
+  const error = t.throws(() => pretty(1).input('km2').m())
+  t.is(
+    error.message,
+    'Invalid conversion. You are trying to convert an area measurement to a length measurement.'
+  )
+})
